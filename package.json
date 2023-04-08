@@ -1,0 +1,51 @@
+{
+  "name": "compiler",
+  "version": "1.0.0",
+  "description": "Project to implement the compiler",
+  "private": true,
+  "scripts": {
+    "start:dynamic_programming": "ts-node -r tsconfig-paths/register --transpile-only ./bin/dynamic_programming.ts",
+    "start:memo": "ts-node -r tsconfig-paths/register --transpile-only ./bin/memo.ts",
+    "start:loop": "ts-node -r tsconfig-paths/register --transpile-only ./bin/loop.ts",
+    "start:recursive": "ts-node -r tsconfig-paths/register --transpile-only ./bin/recursive.ts",
+    "start:binary_search": "ts-node -r tsconfig-paths/register --transpile-only ./bin/binary_search.ts",
+    "start:binary_search_with_measure": "ts-node -r tsconfig-paths/register --transpile-only ./bin/binary_search_with_measure.ts",
+    "start:find_index": "ts-node -r tsconfig-paths/register --transpile-only ./bin/find_index.ts",
+    "start:find_index_with_measure": "ts-node -r tsconfig-paths/register --transpile-only ./bin/find_index_with_measure.ts",
+    "start:depth_first_search": "ts-node -r tsconfig-paths/register --transpile-only ./bin/depth_first_search.ts",
+    "start:breadth_first_search": "ts-node -r tsconfig-paths/register --transpile-only ./bin/breadth_first_search.ts",
+    "test:unit": "jest unit",
+    "test:e2e": "jest e2e",
+    "test:dynamic_programming": "jest e2e/fibonacci/dynamic_programming",
+    "test:memo": "jest e2e/fibonacci/memo",
+    "test:loop": "jest e2e/fibonacci/loop",
+    "test:recursive": "jest e2e/fibonacci/recursive",
+    "test:binary_search": "jest e2e/binary_search",
+    "test:depth_first_search": "jest e2e/depth_first_search",
+    "test:breadth_first_search": "jest e2e/breadth_first_search",
+    "test:typecheck": "tsc --noEmit --skipLibCheck --project tsconfig.json",
+    "lint:check": "eslint --ext .js,.ts .",
+    "lint:fix": "eslint --ext .js,.ts . --fix",
+    "format:check": "prettier --check '**/*.{js,ts}'",
+    "format:fix": "prettier --write '**/*.{js,ts}'"
+  },
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "ts-node": "^10.8.1",
+    "tsconfig-paths": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.0.0",
+    "@types/node": "^18.8.2",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-node": "^11.1.0",
+    "jest": "^28.0.0",
+    "prettier": "^2.7.1",
+    "ts-jest": "^28.0.0",
+    "typescript": "^4.8.4"
+  }
+}
